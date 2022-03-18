@@ -133,7 +133,7 @@ body {
 
 .nav-mobile .nav-links {
   display: grid;
-  grid-template: 70px / 130px 1fr 70px;
+  grid-template: 70px / 90px 1fr 70px;
   background-color: white;
 }
 
