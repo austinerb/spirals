@@ -192,6 +192,14 @@ body {
   color: #424340;
 }
 
+.nav-mobile .nav-menu .nav-menu-services {
+  margin-top: -8px;
+}
+
+.nav-mobile .nav-menu .nav-menu-services ul li {
+  font-size: 23px;
+}
+
 .nav-mobile .nav-menu-btn {
   display: grid;
   grid-template: 1fr / 1fr;
@@ -247,9 +255,13 @@ body {
 }
 
 .home .info h1 {
-  font-size: 50px;
-  margin-bottom: 30px;
+  font-size: 40px;
+  margin-bottom: 10px;
   font-family: sans-serif;
+}
+
+.home .info .description {
+  margin-bottom: 30px;
 }
 
 .home .info .learn-more a {
@@ -267,6 +279,9 @@ body {
   width: 100%;
   padding: 40px 0;
   position: relative;
+  background-image: url("img/banner.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .banner .overlay {
@@ -291,24 +306,18 @@ body {
 
 /* services page */
 
-.services .banner {
-  background-image: url("img/banner.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
 .services .content-container {
-  padding: 40px;
+  padding: 40px 20px;
 }
 
 .services .content-box {
   background-color: white;
-  padding: 30px 40px;
+  padding: 20px 40px 45px;
 }
 
 .services h2 {
   text-align: center;
-  font-size: 80px;
+  font-size: 65px;
   margin-bottom: 20px;
 }
 
@@ -331,15 +340,17 @@ body {
 
 .services h3 {
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
 .services ul {
   list-style: none;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .services ul li {
   font-size: 22px;
+  margin-bottom: 10px;
 }
 
 .services ul li a {
@@ -355,9 +366,88 @@ body {
   font-family: sans-serif;
 }
 
+/* about us page */
+
+/* about us */
+
+.about .aboutus-container .content-box {
+  display: grid;
+  grid-template: 1fr / 200px 1fr;
+  grid-gap: 30px;
+  align-items: center;
+  padding: 20px 40px 20px;
+}
+
+.about .aboutus-container .content-box img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.about .aboutus-container .content-box .aboutus-description h2 {
+  font-size: 50px;
+  text-align: left;
+}
+
+.about .aboutus-container .content-box .aboutus-description p {
+  font-size: 20px;
+}
+
+/* about us staff */
+
+.about .content-container {
+  padding: 190px 20px;
+}
+
+.about .content-container .person-pic {
+  margin: -150px auto 10px;
+  width: 250px;
+}
+
+.about .content-container .person-pic img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.about .content-box {
+  background-color: white;
+  padding: 20px 40px 45px;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.about .content-description {
+  font-size: 22px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.about .images {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 40px;
+}
+
+.about .images img {
+  width: 100%;
+}
+
+.about .content-book {
+  text-decoration: none;
+  color: white;
+  background-color: #bf785e;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+
 /* media queries */
 
-@media (max-width: 660px) {
+@media (max-width: 675px) {
   .nav {
     display: none;
   }
@@ -365,9 +455,34 @@ body {
   .nav-mobile {
     display: block;
   }
+
+  .services .images {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about .images {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 35px;
+  }
 }
 
-@media (min-width: 661px) {
+@media (max-width: 745px) {
+  .about .aboutus-container .content-box {
+    display: grid;
+    grid-template: 1fr / 1fr;
+  }
+
+  .about .aboutus-container .content-box img {
+    display: none;
+  }
+}
+
+@media (min-width: 676px) {
   .nav {
     display: block;
   }
