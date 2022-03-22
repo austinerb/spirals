@@ -105,18 +105,18 @@ body {
   background-color: white;
   width: 240px;
   text-align: center;
-  padding: 10px 0 13px;
-  opacity: 0.9;
+  padding: 5px 0 8px;
+  opacity: 0.95;
 }
 
 .nav .nav-dropdown li {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .nav .nav-dropdown li a {
   text-decoration: none;
   font-family: serif;
-  font-size: 30px;
+  font-size: 25px;
   color: #424340;
 }
 
@@ -176,7 +176,7 @@ body {
   background-color: white;
   height: calc(100vh - 70px);
   text-align: center;
-  opacity: 0.9;
+  opacity: 0.95;
   overflow-y: scroll;
   padding-top: 30px;
   font-size: 30px;
@@ -262,6 +262,7 @@ body {
 
 .home .info .description {
   margin-bottom: 30px;
+  font-size: 19px;
 }
 
 .home .info .learn-more a {
@@ -277,7 +278,7 @@ body {
 
 .banner {
   width: 100%;
-  padding: 40px 0;
+  padding: 30px 0;
   position: relative;
   background-image: url("img/banner.jpg");
   background-position: center;
@@ -312,17 +313,17 @@ body {
 
 .services .content-box {
   background-color: white;
-  padding: 20px 40px 45px;
+  padding: 20px 20px 30px;
 }
 
 .services h2 {
   text-align: center;
-  font-size: 65px;
+  font-size: 55px;
   margin-bottom: 20px;
 }
 
 .services .content-description {
-  font-size: 22px;
+  font-size: 19px;
   text-align: justify;
   margin-bottom: 20px;
 }
@@ -375,7 +376,7 @@ body {
   grid-template: 1fr / 200px 1fr;
   grid-gap: 30px;
   align-items: center;
-  padding: 20px 40px 20px;
+  padding: 20px 20px 20px;
 }
 
 .about .aboutus-container .content-box img {
@@ -389,18 +390,22 @@ body {
 }
 
 .about .aboutus-container .content-box .aboutus-description p {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 /* about us staff */
 
 .about .content-container {
-  padding: 190px 20px 20px;
+  padding: 170px 20px 20px;
+}
+
+.about .content-container .content-box {
+  padding: 20px 20px 30px;
 }
 
 .about .content-container .person-pic {
-  margin: -150px auto 10px;
-  width: 250px;
+  margin: -130px auto 10px;
+  width: 220px;
 }
 
 .about .content-container .person-pic img {
@@ -415,12 +420,12 @@ body {
 
 .about h2 {
   text-align: center;
-  font-size: 65px;
+  font-size: 55px;
   margin-bottom: 20px;
 }
 
 .about .content-description {
-  font-size: 22px;
+  font-size: 19px;
   text-align: justify;
   margin-bottom: 20px;
 }
