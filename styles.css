@@ -452,7 +452,7 @@ body {
 
 /* contact */
 
-.contact .contact-container {
+.contact .content-container {
   padding: 20px;
 }
 
@@ -484,6 +484,11 @@ body {
 
 .contact .contact-info-line p {
   font-size: 20px;
+}
+
+/* book */
+
+.vagaro {
 }
 
 /* media queries */
