@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -13,6 +11,7 @@ body {
   /* font-family: 'Roboto', sans-serif; */
   font-family: serif;
   color: #424340;
+  overflow-y: scroll;
 }
 
 .display-none {
@@ -26,6 +25,11 @@ body {
   background-position: 0 60%;
 }
 
+.width-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 /* nav */
 
 .nav {
@@ -36,6 +40,7 @@ body {
   z-index: 100;
   width: 100%;
   font-family: sans-serif;
+  background-color: white;
 }
 
 .nav .nav-links {
@@ -236,10 +241,18 @@ body {
 
 .home .info {
   position: absolute;
-  width: 100%;
-  height: calc(100vh - 70px);
   color: white;
-  padding: 15px 20px;
+  padding: 25px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.home .info .test {
+  background-color: rgba(0,0,0,.5);
+  padding: 25px;
+  padding-bottom: 34px; /* padding + 9px */
 }
 
 .home .info .name {
@@ -263,6 +276,7 @@ body {
 .home .info .description {
   margin-bottom: 30px;
   font-size: 19px;
+  line-height: 27px;
 }
 
 .home .info .learn-more a {
@@ -313,19 +327,13 @@ body {
 
 .services .content-box {
   background-color: white;
-  padding: 20px 20px 30px;
+  padding: 50px 20px 30px;
 }
 
 .services h2 {
   text-align: center;
-  font-size: 55px;
-  margin-bottom: 20px;
-}
-
-.services .content-description {
-  font-size: 19px;
-  text-align: justify;
-  margin-bottom: 20px;
+  font-size: 60px;
+  margin-bottom: 50px;
 }
 
 .services .images {
@@ -344,14 +352,20 @@ body {
   margin-bottom: 10px;
 }
 
+.services .content-box p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 .services ul {
-  list-style: none;
-  margin-bottom: 40px;
+  /* list-style: none; */
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .services ul li {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .services ul li a {
@@ -370,6 +384,10 @@ body {
 /* about us page */
 
 /* about us */
+
+.about .aboutus-container {
+  background-color: white;
+}
 
 .about .aboutus-container .content-box {
   display: grid;
@@ -391,6 +409,10 @@ body {
 
 .about .aboutus-container .content-box .aboutus-description p {
   font-size: 19px;
+}
+
+.about .aboutus-container .content-box .aboutus-description a {
+  color: #4267B2;
 }
 
 /* about us staff */
@@ -486,10 +508,12 @@ body {
   font-size: 20px;
 }
 
+.contact a {
+  color: #4267B2;
+}
+
 /* book */
 
-.vagaro {
-}
 
 /* media queries */
 
